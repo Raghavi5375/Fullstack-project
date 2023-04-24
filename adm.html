@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="public/login.css">-->
+    <title>Form Submission Results</title>
+</head>
+<style>
+    body {
+        background-color: #000000;
+      }
+      
+      h1{
+        color: orange;
+        position: absolute; 
+        top: 5px; 
+        left: 100px;
+        font-size: 0.8cm;
+    }
+    p{
+        color: orange;
+        position: absolute; 
+        margin-top: 20px; 
+        margin-left : 40%;
+        left: 100px;
+        font-size: 0.7cm;
+    }
+    hr {
+        margin-top:80px;
+        height: 2px;
+        background-color: #FFA500;
+        border: none;
+      }
+      h2{
+        color: orange;
+        position: center; 
+        margin-top: 50px;
+        margin-left:40%; 
+        left: 100px;
+        font-size:2em;
+      }
+      .ad {
+        margin-left:50%;
+        margin-top: 30px;
+        padding: 16px;
+        background-color: orange;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    span{
+      font-size:0.5cm;
+    }
+    h3{
+      float:right;
+      color: orange;
+      font-size:150%;
+    }
+    h4{
+      margin-left:7%;
+      font-size:0.5cm;
+    }
+    
+</style>
+<body>
+    <img src = "logo.jpg" class="small" width = "70" height = "70">
+	
+    <h1>RhythmZone </h1>
+    <h3>Admin</h3>
+    <h2>Upload your podcast now</h2>
+    <a href="addpodcast.html"><button class = "ad">Click here</button></a>
+
+    <br><br>
+    <div class = "para">
+      <h4 style="color : white">Podcast Name:<span id="nam"></span></h4>
+      <h4 style="color : white">Podcast Description:<span id="des"></span></h4>
+      <h4 style="color : white">Type of podcast:<span id="type"></span></h4>
+      <h4 style="color : white">Speaker:<span id="spk"></span></h4>
+      <!--<span id="nam"></span><br>
+			<span id="des"></span><br>
+			<span id="type"></span><br>
+			<span id="spk"></span><br>-->
+    </div>
+
+    <script>
+      /* Retrieve the form values from local storage
+      const name = localStorage.getItem('name');
+      const email = localStorage.getItem('email');
+      const age = localStorage.getItem('age');*/
+
+	   const nam = localStorage.getItem('nam');
+    const des = localStorage.getItem('des');
+    const type = localStorage.getItem('type');
+    const spk = localStorage.getItem('spk');
+
+      /* Display the form values on the page
+      document.getElementById('name').textContent = name;
+      document.getElementById('email').textContent = email;
+      document.getElementById('age').textContent = age;*/
+
+	    document.getElementById('nam').innerHTML = nam;
+	 document.getElementById('des').innerHTML = des;
+	  document.getElementById('type').innerHTML = type;
+	   document.getElementById('spk').innerHTML = spk;
+
+      // Clear the local storage
+      localStorage.clear();
+    </script>
+   
+  </body>
+</html>
+
+</body>
+</html>
