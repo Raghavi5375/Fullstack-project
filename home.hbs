@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>home</title>
+	</head>
+	
+	
+		<style>
+		.img {
+			width: 225px; 
+			height: 345px;
+			margin:  10px;
+   		}
+		.container{
+			padding: 105px;
+
+		}
+		.small{
+			position: absolute; 
+			top: 5px; 
+			left: 10px;
+			width: 150px;
+			height: 150px;
+
+		}
+		.admin {
+			float: right;
+			margin-right: 5px;
+			margin-top: 30px;
+			padding: 16px;
+			background-color: orange;
+			color: black;
+			border: none;
+			border-radius: 10px;
+			font-size: 16px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		p{
+			color: orange;
+			font-size: 30px;
+		}
+		button {
+  		padding: 2px;
+  		background-color: black;
+  		cursor: pointer;
+  		border-radius: 5px;
+		}
+		h1{
+			color: orange;
+			position: absolute; 
+			top: 5px; 
+			left: 150px;
+			font-size: 1.5cm;
+		}
+		
+
+
+.btn {
+  background-color: orange;
+  color: black;
+  font-size: 16px;
+  padding: 16px;
+  padding-left: 5cm;
+  padding-right: 5cm;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 250px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.btn:hover, .btn:focus {
+  background-color: orange;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 16px;
+  padding-left: 5cm;
+  padding-right: 5cm;
+  border: none;
+  border-bottom: 1px solid #e0dede;
+  border-radius: 15px;
+}
+
+#myInput:focus {outline: 3px solid #e0dede}
+
+.drop {
+  position: relative;
+  display: inline-block;
+  margin-left: 10cm;
+}
+
+.drop-con {
+  display: none;
+  position: absolute;
+  background-color:  #fff;
+  min-width: 230px;
+  border: 1px solid #e0dede;
+  z-index: 1;
+  border-radius: 10px;
+  overflow-y: scroll;
+  height: 7cm;
+  margin-left: 250px;
+}
+
+.drop-con a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.drop a:hover {background-color: #e0dede;}
+
+.show {display: block;}
+
+span{
+	color: White;
+}
+
+
+	</style>
+	<body style="background-color:black">
+	<img src = "https://rachelcorbett.com.au/wp-content/uploads/2018/07/How-to-design-a-great-podcast-logo.jpg" class="small"/>
+	<h1>RhythmZone</h1>
+	
+	<a href="/"><button class="admin">Logout</button></a>
+	<a href="adm"><button class="admin">Admin</button></a>
+
+
+ <div class="drop">
+    <button onclick="myFunction()" class="btn">Search for your favorite podcast</button>
+    <div id="myDrop" class="drop-con">
+      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+	  
+	  <a href="namasteindia">Namaste India</a>
+	  <a href="tedtalksdaily">Ted talks daily</a>
+	  <a href="masalapodcast">Masala podcast</a>
+	  <a href="thebigfatindianghotala">The big fat indian ghotala</a>
+	  <a href="mahabarath">Mahabarath</a>
+	  <a href="ranvvershow">The Ranvver show</a>
+	  <a href="truestory">True story</a>
+	  <a href="decodeoil">Decode dil</a>
+	  <a href="chanakyaniti">Chanakyaniti</a>
+	  <a href="mymythpat">My mythpat</a>
+	  <a href="meditatewithgurudev">Meditate with gurudev</a>
+	  <a href="modernlove">Modern love</a>
+	  <a href="dilkholestarsbole">Dil khole stars bole</a>
+	  <a href="everylittlething">Every little thing</a>
+
+	</div>
+ </div>
+ <script>
+    function myFunction() {
+  document.getElementById("myDrop").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDrop");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+  </script>
+ 
+
+		<div class = "container">
+		<p>Top 10 popular podcast shows</p>
+		<a href="namasteindia"><button><img src = "https://hubhopper.com/blog/wp-content/uploads/2021/03/namastey-india.jpg" class="img" id="icon"></button></a>
+       <!--  <audio controls
+        	src="C:\Users\Keerthana\PPS\Documents\AudKit Spotify Music Converter\Converted\Enchanted.mp3" type="audio/mp3">
+        </audio> -->
+       <a href = "tedtalksdaily"><button><img src="https://i.scdn.co/image/96b8b3d5b7c1a5ae952c7489406602539ce651c8" class="img"></button></a>
+
+       <a href="masalapodcast"><button><img src = "https://uploads-ssl.webflow.com/638aec50b9a23cec17b8c4d1/63c8efcdfccaf9849ecc8efd_Masala-Podcast-1651313958-500x500-1.jpeg"  class="img"></button></a>
+
+       <a href="thebigfatindianghotala"><button><img src = "https://akm-img-a-in.tosshub.com/indiatoday/images/bodyeditor/202103/thumbnail_Leisure-Mar22-16-x433.jpg?OGvWXyyWgCNlVoeYMy7iN4pNYs9EAh_E"  class="img"></button></a>
+
+       <a href="mahabarath"><button><img src="https://i1.sndcdn.com/artworks-xc1rMnXtVlhMBQR4-eGzbpg-t500x500.jpg"  class="img"></button></a>
+
+	   <a href="ranvvershow"><button><img src="https://i.scdn.co/image/ab6765630000ba8aa35fd221a1116cd6dd1ddcc5" class="img"></button></a>
+
+	   <a href="truestory"><button><img src="https://i.scdn.co/image/ab6765630000ba8ac4980387eaa5e6471cf19782" class="img"></button></a>
+
+	   <a href="decodeoil"><button><img src="https://i.scdn.co/image/ab6765630000ba8acf45bab65eff11e08f59fba5" class="img"></button></a>
+
+	   <a href="chanakyaniti"><button><img src="https://i.scdn.co/image/ab6765630000ba8a6ae9b356ad51a874a20b8aa9" class="img"></button></a>
+
+	   <a href="mymythpat"><button><img src="https://i.scdn.co/image/ab6765630000ba8ada7c4c5e42815c1f5ee91cb1" class="img"></button></a>
+	   <p>Best episodes of the week</p>
+
+	   <a href="meditatewithgurudev"><button><img src="https://i.scdn.co/image/ab6765630000ba8afb41f68f61988e863c17fa76 " class="img"></button></a>
+
+	   <a href="modernlove"><button><img src="https://i.scdn.co/image/4815ba6ecf91db6c3946d923e33712226d46d780" class="img"></button></a>
+
+	   <a href="dilkholestarsbole"><button><img src="https://wp-socialnation-assets.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/09/15152949/Dil-khole-star-bole.png" class="img"></button></a>
+
+	   <a href="everylittlething"><button><img src="https://i.scdn.co/image/ab6765630000ba8afb746c0c706effd032d75360" class="img"></button></a>
+	   
+	   
+       </div>
+
+	  
+	</body>	
+</html>
+
+
+
