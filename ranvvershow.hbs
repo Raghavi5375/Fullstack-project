@@ -1,0 +1,130 @@
+<html>
+	<head>
+		<title>ranvvershow</title>
+	</head>
+	<style type="text/css">
+		.img{
+			width: 250px; 
+			height: 300px;
+			padding: 40px;
+			padding-right: 30px;
+			border-radius: 50px;
+            float : left;
+		}
+		.img1{
+			width: 150px; 
+			height: 200px;
+			padding: 40px;
+			padding-right: 30px;
+			border-radius: 50px;
+            float : left;
+		}
+		#icon{
+			width: 40px;
+			cursor:  pointer;
+		}
+		#icon1{
+			width: 40px;
+			cursor:  pointer;
+		}
+		#icon2{
+			width: 40px;
+			cursor:  pointer;
+		}
+	</style>
+	
+	<body style="background-color:black">
+		<div style="display:flex; align-items: center;">
+		<img src="https://i.scdn.co/image/ab6765630000ba8aa35fd221a1116cd6dd1ddcc5" class="img">
+		<p style="color : white; text-align: right;font-style: italic; font-size:20px;">podcast Episode - </p>
+		<p style="color : white; text-align: right;font-style: italic; font-size: 100px;">The ranveer show</p>
+		
+	    </div>
+	    <div>
+	    	<p style="color:white; font-style: italic; font-size: 25px;">Ranveer Allahbadia aka BeerBiceps brings you #TheRanveerShow. Every episode has been designed to bring you some kind of value adds. Life is a never-ending self-improvement game - whether it's health, career guidance, lifestyle advice, or just plain old inspiration... Each episode will charge you up in some way. We deep dive into some of the world's most intelligent, most successful minds in order to mine out the diamonds they've created over the course of their lives. Bollywood stars, athletes, entrepreneurs, and all kinds of motivational human beings.
+
+
+
+            </p>
+	    </div>
+	    <div style="display:flex; align-items: center; ">
+		<img src="https://i.scdn.co/image/ab6765630000ba8aa35fd221a1116cd6dd1ddcc5" class="img1">
+		<p style="color : white; text-align: right;font-style: italic; font-size: 30px;">Bollywood coolest dad suniel shetty on life ,carrer and reinvention ajio presents - apr 21 </p>
+		<img src="https://cdn.pixabay.com/photo/2012/04/02/16/02/button-24836__340.png" id="icon">
+
+
+
+		<audio id="1">
+        	<source src="C:\Users\Keerthana\TuneFab\Spotify Music Converter\Converted\Bollywood's Coolest Dad Suniel Shetty On Life, Career & Reinvention Ajio Presents The Ranveer Show 298.mp3" type="audio/mp3">
+        </audio>
+        <script>
+        	var audio = document.getElementById("1");
+        	var icon =  document.getElementById("icon");
+        	icon.onclick = function(){
+        		if(audio.paused){
+        			audio.play();
+        			icon.src = "https://cdn.pixabay.com/photo/2014/04/02/10/22/pause-303651__340.png"
+        		}else{
+        			audio.pause();
+        			icon.src="https://cdn.pixabay.com/photo/2012/04/02/16/02/button-24836__340.png"
+        		}
+        	}
+
+        </script>
+		
+	    </div>
+        <div style="display:flex; align-items: center;">
+            <img src="https://i.scdn.co/image/ab6765630000ba8aa35fd221a1116cd6dd1ddcc5" class="img1">
+            <p style="color : white; text-align: right;font-style: italic; font-size: 30px;">From serial killers to demons :dark side of paranormal ,sarbajeet mohanty - apr 18 </p>
+            <img src="https://cdn.pixabay.com/photo/2012/04/02/16/02/button-24836__340.png" id="icon1">
+    
+    
+    
+            <audio id="2">
+                <source src="C:\Users\Keerthana\TuneFab\Spotify Music Converter\Converted\From Serial Killers to Demons- Dark Side of the Paranormal, Sarbajeet Mohanty - The Ranveer Show 297.mp3" type="audio/mp3">
+            </audio>
+            <script>
+                var audio1 = document.getElementById("2");
+                var icon1 =  document.getElementById("icon1");
+                icon1.onclick = function(){
+                    if(audio1.paused){
+                        audio1.play();
+                        icon1.src = "https://cdn.pixabay.com/photo/2014/04/02/10/22/pause-303651__340.png"
+                    }else{
+                        audio1.pause();
+                        icon1.src="https://cdn.pixabay.com/photo/2012/04/02/16/02/button-24836__340.png"
+                    }
+                }
+    
+            </script>
+            
+            </div>
+            <div style="display:flex; align-items: center;">
+                <img src="https://i.scdn.co/image/ab6765630000ba8aa35fd221a1116cd6dd1ddcc5" class="img1">
+                <p style="color : white; text-align: right;font-style: italic; font-size: 30px;">Scariest yet most popular episode ever - aghori truth with Dr.robert s.-apr 14 </p>
+                <img src="https://cdn.pixabay.com/photo/2012/04/02/16/02/button-24836__340.png" id="icon2">
+        
+        
+        
+                <audio id="3">
+                    <source src="C:\Users\Keerthana\TuneFab\Spotify Music Converter\Converted\SCARIEST Yet Most Positive Episode Ever - Aghori Truths with Dr. Robert S. - The Ranveer Show 296.mp3" type="audio/mp3">
+                </audio>
+                <script>
+                    var audio2 = document.getElementById("3");
+                    var icon2 =  document.getElementById("icon2");
+                    icon2.onclick = function(){
+                        if(audio2.paused){
+                            audio2.play();
+                            icon2.src = "https://cdn.pixabay.com/photo/2014/04/02/10/22/pause-303651__340.png"
+                        }else{
+                            audio2.pause();
+                            icon2.src="https://cdn.pixabay.com/photo/2012/04/02/16/02/button-24836__340.png"
+                        }
+                    }
+        
+                </script>
+                
+                </div>
+	</body>
+
+</html>
